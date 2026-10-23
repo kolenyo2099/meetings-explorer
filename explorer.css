@@ -1,0 +1,44 @@
+.view-switch{display:flex;gap:4px;margin-bottom:12px;border-bottom:1px solid var(--line)}
+.view-switch button{padding:10px 15px;background:none;border:0;border-bottom:2px solid transparent;cursor:pointer;color:var(--mut);font-weight:500}
+.view-switch button[aria-current=page]{color:var(--acc);border-bottom-color:var(--acc)}
+.scope-note{font-size:12px;color:var(--mut);margin:10px 0 0;max-width:85ch}
+.result-title{display:block;background:none;border:0;padding:0;text-align:left;color:var(--fg);cursor:pointer;font:500 18px/1.4 var(--serif);overflow-wrap:anywhere}
+.result-title:hover{color:var(--acc)}
+.result-title:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.record{display:block;cursor:default}
+.record .meta{margin-top:6px}
+.excerpt{font-size:14px;line-height:1.65;margin:12px 0;color:var(--fg);max-width:76ch;overflow-wrap:anywhere}
+mark{background:#f5df9d;color:#26210f;border-radius:2px;padding:0 1px}
+.evidence{margin-top:18px;padding-top:14px;border-top:1px solid var(--line)}
+.evidence blockquote{margin:9px 0;font-size:14px;line-height:1.65;max-width:76ch;white-space:pre-wrap;overflow-wrap:anywhere}
+.evidence a,.record a{color:var(--acc);overflow-wrap:anywhere}
+.evidence p{margin:8px 0}
+.record details{margin-top:14px;border-top:1px solid var(--line);padding-top:10px}
+.record summary{cursor:pointer;font-size:13px;color:var(--acc)}
+.doc-reference{padding:12px 0;border-top:1px solid var(--line)}
+.doc-reference:first-child{border-top:0}
+.doc-reference button,.meeting-link{background:none;border:0;padding:3px 0;color:var(--acc);text-align:left;cursor:pointer;font:inherit}
+.connection{font-size:12px;color:var(--mut)}
+.body-text{font-size:14px;line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere;max-height:560px;overflow:auto;padding:12px 0}
+.tag.document{color:var(--acc);background:var(--acc-soft)}
+.tag.candidate{color:var(--fg)}
+.list-section{font-size:14px;font-weight:600;margin:16px 0 5px}
+.passage-button{margin:6px 8px 6px 0}
+.grid>section,.grid>aside{min-width:0}
+.pop{max-width:calc(100vw - 40px)}
+@media(max-width:560px){.view-switch button{font-size:13px;padding:9px 10px}.controls{position:relative}.toolbar .count{width:100%}.record{padding:16px}.stat{min-width:100px}.excerpt{font-size:13px}.tl-head{align-items:start}.scope-note{font-size:12px}}
+
+/* guided tour */
+.tour-open{margin-top:14px}
+#tour{position:fixed;inset:0;z-index:100}
+.tour-block{position:absolute;inset:0}
+.tour-spot{position:fixed;border-radius:14px;box-shadow:0 0 0 9999px rgba(15,18,25,.62);pointer-events:none;transition:all .25s ease}
+.tour-card{position:fixed;background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:0 14px 40px rgba(0,0,0,.35);max-height:calc(100vh - 24px);overflow:auto}
+.tour-card h2{font:650 20px/1.2 var(--serif);margin:2px 0 8px}
+.tour-card p{margin:0 0 14px;font-size:14px;line-height:1.6}
+.tour-n{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--faint)}
+.tour-btns{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.tour-btns button{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:7px 14px;cursor:pointer;font-size:14px;margin-left:6px}
+.tour-btns .tour-skip{border:0;background:none;color:var(--mut);margin:0;padding-left:0}
+.tour-btns .tour-go{background:var(--acc);border-color:var(--acc);color:var(--card);font-weight:500}
+.side,#list{scroll-margin-top:140px}

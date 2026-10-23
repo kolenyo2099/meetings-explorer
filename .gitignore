@@ -1,0 +1,12 @@
+# Allowlist: only what the static app needs to run
+*
+!.gitignore
+!index.html
+!explorer.js
+!explorer.css
+!tour.js
+!viz/
+viz/*
+!viz/data.js
+!viz/documents.js
+!viz/sources.js
